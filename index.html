@@ -4,49 +4,118 @@
   <title>Silky Smooth</title>
   <style>
     body { 
-      font-family:Arial; 
-      background:#fdf6f9; 
-      text-align:center; 
+      font-family: Arial; 
+      background: #fdf6f9; 
+      text-align: center; 
+      margin: 0; 
+      padding: 0;
     }
-    .product { 
-      background:white; 
-      padding:20px; 
-      margin:20px auto; 
-      width:300px; 
-      border-radius:10px; 
-      box-shadow:0 5px 10px rgba(0,0,0,0.1); 
+
+    header {
+      background: #ff7eb3;
+      color: white;
+      padding: 20px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    button { 
-      background:#ff7eb3; 
-      border:none; 
-      padding:10px 20px; 
-      color:white; 
-      border-radius:5px; 
-      cursor:pointer; 
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2em;
     }
+
+    header p {
+      margin: 5px 0 0 0;
+      font-size: 1.1em;
+    }
+
+    .products-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 30px;
+      gap: 20px;
+    }
+
+    .product {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      width: 220px;
+      text-align: center;
+    }
+
     .product img {
-  border-radius: 10px;     
-  margin-bottom: 10px;     
-  box-shadow: 0 5px 10px rgba(0,0,0,0.1);  
+      border-radius: 10px;     
+      margin-bottom: 10px;     
+      width: 180px; 
+      height: auto;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);  
+    }
+
+    .product h2 {
+      font-size: 1.2em;
+      margin: 10px 0 5px 0;
+    }
+
+    .product p {
+      margin: 5px 0 15px 0;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .product button {
+      background: #ff7eb3;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    .product button:hover {
+      background: #ff5aa3;
     }
   </style>
 </head>
 <body>
-  <h1>🌸 Silky Smooth 🌸</h1>
-  <p>Natural beauty, glowing skin ✨</p>
 
-  <div class="product">
-    <img src="Face Cream.webp" alt="Hydrating Face Cream" width="200"> 
-    <h2>Hydrating Face Cream</h2>
-    <p>$25.00</p>
-    <button onclick="location.href='checkout.html'">Buy Now</button>
-  </div>
+  <header>
+    <h1>🌸 Silky Smooth 🌸</h1>
+    <p>Natural beauty, glowing skin ✨</p>
+  </header>
 
-  <div class="product">
-    <img src="Body Butter.webp" alt="Body Butter Cream" Width="200">
-    <h2>Body Butter Cream</h2>
-    <p>$18.00</p>
-    <button onclick="location.href='checkout.html'">Buy Now</button>
+  <div class="products-container">
+
+    <div class="product">
+      <img src="Face Cream.webp" alt="Hydrating Face Cream">
+      <h2>Hydrating Face Cream</h2>
+      <p>$25.00</p>
+      <button onclick="location.href='checkout1.html'">Buy Now</button>
+    </div>
+
+    <div class="product">
+      <img src="Body Butter.webp" alt="Body Butter Cream">
+      <h2>Body Butter Cream</h2>
+      <p>$18.00</p>
+      <button onclick="location.href='checkout2.html'">Buy Now</button>
+    </div>
+
+    <div class="product">
+      <img src="Night Cream.webp" alt="Night Repair Cream">
+      <h2>Night Repair Cream</h2>
+      <p>$30.00</p>
+      <button onclick="location.href='checkout3.html'">Buy Now</button>
+    </div>
+
+    <div class="product">
+      <img src="Hand Cream.webp" alt="Hand & Nail Cream">
+      <h2>Hand & Nail Cream</h2>
+      <p>$15.00</p>
+      <button onclick="location.href='checkout4.html'">Buy Now</button>
+    </div>
+
   </div>
 
 </body>
